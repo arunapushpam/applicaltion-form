@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+	<style>
+		.name{
+			height:85vh;
+			background:linear-gradient(#cc2b5e,#753a88)
+
+		}
+		.container{
+			width:80%;
+			
+			margin:auto;
+			
+		}
+		.form{
+			width:40%;
+			margin:auto;
+			display:flex;
+			justify-content:center;
+			margin-top: 3rem;
+			background-color:azure;
+			padding: 3rem;
+			
+		}
+		.form input{
+			padding:.5rem;
+			margin-top:1rem;
+		}
+		.name h1{
+			text-align: center;
+			padding-top: 1rem;
+			color:white;
+			font-size: 2.5rem;
+		}
+		.btn{
+			display: flex;
+			justify-content: center;
+		}
+		.btn input{
+			padding:10px 15px;
+			border-radius: .5rem;
+			border:none;
+			font-size: 1rem;
+			font-weight: bold;
+			margin-top: 1rem;
+			background-color: #753a88;
+			color:white;
+		}
+		label{
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+		 
+	</style>
+
+</head>
+<body>
+	<div class="name">
+		<div class="container">
+			<h1>Application Form</h1>
+			<div class="form">
+				
+				<form method="post" action="submit.html" >
+			  <label for="username">Username:</label>
+			  <input type="text" id="username" name="username" required><br>
+
+			  <label for="password">Password:</label>
+			  <input type="password" id="password" name="password" required><br>
+
+			  <label for="mobile">Phone No :</label>
+			  <input type="tel" id="mobile" name="mobile" required><br>
+
+			  <label for="file">Choose File:</label>
+			  <input type="file" id="file" name="file"><br>
+
+			 <div class="btn"> 
+				<input id="myForm" type="submit" value="submit"></input>
+			</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+</body>
+</html>
